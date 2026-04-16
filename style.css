@@ -12,7 +12,7 @@
       --color-text-muted: #5a7080;
       --color-border:     rgba(19, 72, 105, 0.12);
 
-      --gradient-hero:    linear-gradient(145deg, #0d3350 0%, #192844 50%, #134869 100%);
+      --gradient-hero:    linear-gradient(145deg, #69CDCE 0%, #134869 50%, #69CDCE 100%);
       --gradient-cta:     linear-gradient(135deg, #134869 0%, #0e2d45 100%);
       --gradient-card:    linear-gradient(160deg, rgba(105, 205, 206, 0.08) 0%, rgba(19, 72, 105, 0.04) 100%);
 
@@ -290,6 +290,7 @@
       position: relative;
       overflow: hidden;
       padding: 120px 24px 80px;
+      clip-path: ellipse(85% 100% at 50% 0%);
     }
 
     /* Círculo de fondo decorativo */
@@ -459,16 +460,6 @@
       background: var(--color-off-white);
       position: relative;
       overflow: hidden;
-    }
-
-    #servicios::before {
-      content: '';
-      position: absolute;
-      top: -1px;
-      left: 0; right: 0;
-      height: 80px;
-      background: var(--gradient-hero);
-      clip-path: ellipse(55% 100% at 50% 0%);
     }
 
     .section-header {
