@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aqualis | Branding Estratégico</title>
+  <meta name="description" content="Creamos marcas que las personas recuerdan. Sistemas de identidad visual estratégicos que posicionan tu negocio." />
+
+  <!-- =============================================
+       FUENTES: Fraunces (display) + Plus Jakarta Sans (body)
+       ============================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- =============================================
+       ICONOS: Lucide via CDN
+       ============================================= -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+</head>
+<body>
+
+  <!-- ============================================
+       NAVEGACIÓN
+       ============================================ -->
+  <nav class="nav" id="navbar">
+    <div class="container">
+      <div class="nav__inner">
+
+        <!-- LOGO -->
+        <a href="#" class="nav__logo" aria-label="Aqualis — Inicio">
+          <div class="logo-placeholder">
+            <img src="img/Logo SVG White.svg" alt="Aqualis" style="height:36px" />
+            <!-- <span class="logo-placeholder__name">Aqualis</span> -->
+          </div>
+        </a>
+
+        <!-- MENÚ -->
+        <ul class="nav__links" role="list">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <!-- CTA NAV -->
+        <div class="nav__cta">
+          <a href="#contacto" class="btn btn--ghost" style="padding:10px 22px;font-size:0.85rem">Solicitar asesoría</a>
+        </div>
+
+        <!-- HAMBURGER -->
+        <button class="nav__hamburger" aria-label="Abrir menú" id="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section class="hero" id="inicio">
+
+    <!-- Orbes de color de fondo -->
+    <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+    <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+
+    <!-- Círculos decorativos -->
+    <div class="hero__circle" aria-hidden="true"></div>
+    <div class="hero__circle hero__circle--outer" aria-hidden="true"></div>
+
+    <div class="hero__content">
+
+      <!-- LOGO HERO -->
+      <div class="hero__logo">
+        <div class="hero__logo-placeholder">
+          <img src="img/Logo SVG.svg" alt="Aqualis" style="height:200px; filter:brightness(1)" />
+        </div>
+      </div>
+
+      <!-- EYEBROW -->
+      <p class="hero__eyebrow">Agencia de Branding Estratégico</p>
+
+      <!-- HEADLINE PRINCIPAL -->
+      <h1 class="hero__headline">
+        Creamos marcas que<br />
+        las personas <em class="highlight">recuerdan</em>
+      </h1>
+
+      <!-- DESCRIPCIÓN -->
+      <p class="hero__desc">
+        Construimos sistemas de identidad visual estratégicos que posicionan tu negocio y atraen a tus clientes ideales.
+      </p>
+
+      <!-- ACCIONES -->
+      <div class="hero__actions">
+        <a href="#contacto" class="btn btn--primary btn--arrow">Solicita tu asesoría</a>
+        <a href="#proyectos" class="btn btn--ghost">Ver nuestros proyectos</a>
+      </div>
+
+    </div>
+
+    <!-- Indicador de scroll -->
+    <div class="hero__scroll" aria-hidden="true">
+      <i data-lucide="chevron-down"></i>
+      <span>Conócenos</span>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================
+       SECCIÓN: SERVICIOS
+       ============================================ -->
+  <section id="servicios">
+    <div class="container">
+
+      <div class="section-header fade-in">
+        <span class="section-tag">Lo que hacemos</span>
+        <h2 class="section-header__title">
+          Nuestros servicios<br />
+          <span style="font-weight:300">Diseñados para <em class="highlight--underline">convertir</em></span>
+        </h2>
+        <p class="section-header__subtitle">
+          Cada servicio está pensado para construir una presencia de marca sólida, coherente y que genera resultados reales.
+        </p>
+      </div>
+
+      <div class="divider" aria-hidden="true">
+        <div class="divider__line"></div>
+        <div class="divider__dot"></div>
+        <div class="divider__line"></div>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Servicio 1: Diseño de Logotipo -->
+        <article class="service-card fade-in fade-in--delay-1">
+          <div class="service-card__icon">
+            <i data-lucide="pen-tool"></i>
+          </div>
+          <p class="service-card__tag">01 — Diseño</p>
+          <h3 class="service-card__title">Diseño de Logotipo</h3>
+          <p class="service-card__desc">
+            Creamos el símbolo central de tu marca. Un diseño único, escalable y atemporal que comunica tu esencia en un vistazo.
+          </p>
+          <span class="service-card__phrase">Impacto visual inmediato</span>
+        </article>
+
+        <!-- Servicio 2: Identidad de Marca -->
+        <article class="service-card fade-in fade-in--delay-2">
+          <div class="service-card__icon">
+            <i data-lucide="layers"></i>
+          </div>
+          <p class="service-card__tag">02 — Identidad</p>
+          <h3 class="service-card__title">Identidad de Marca</h3>
+          <p class="service-card__desc">
+            Desarrollamos todo el ecosistema visual: colores, tipografías y elementos gráficos que crean una experiencia coherente.
+          </p>
+          <span class="service-card__phrase">Consistencia en todo canal</span>
+        </article>
+
+        <!-- Servicio 3: Estrategia de Marca -->
+        <article class="service-card fade-in fade-in--delay-3">
+          <div class="service-card__icon">
+            <i data-lucide="target"></i>
+          </div>
+          <p class="service-card__tag">03 — Estrategia</p>
+          <h3 class="service-card__title">Estrategia de Marca</h3>
+          <p class="service-card__desc">
+            Definimos tu propósito, valores y voz. No solo diseñamos, pensamos cómo tu marca debe hablarle al mundo.
+          </p>
+          <span class="service-card__phrase">Posicionamiento real</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       SECCIÓN: PROYECTOS / PORTFOLIO
+       ============================================ -->
+  <section id="proyectos">
+    <div class="container">
+
+      <div class="section-header fade-in">
+        <span class="section-tag">Nuestro trabajo</span>
+        <h2 class="section-header__title">
+          Resultados que<br />
+          <em class="highlight--underline">hablan por sí solos</em>
+        </h2>
+        <p class="section-header__subtitle">
+          Proyectos que transformaron negocios y crearon marcas que conectan con las personas.
+        </p>
+      </div>
+
+      <div class="divider" aria-hidden="true">
+        <div class="divider__line"></div>
+        <div class="divider__dot"></div>
+        <div class="divider__line"></div>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <!-- Proyecto 1: WauWau -->
+        <article class="portfolio-card fade-in fade-in--delay-1">
+          <div class="portfolio-card__placeholder">
+            <i data-lucide="image"></i>
+            <span>Imagen WauWau</span>
+          </div>
+          <img class="portfolio-card__img" src="img/wauWau2.jpg" alt="Identidad visual WauWau" loading="lazy" />
+          <div class="portfolio-card__overlay"></div>
+          <div class="portfolio-card__info">
+            <p class="portfolio-card__category">Identidad Visual</p>
+            <h3 class="portfolio-card__name">WauWau Branding</h3>
+          </div>
+          <div class="portfolio-card__arrow" aria-hidden="true">
+            <i data-lucide="arrow-up-right"></i>
+          </div>
+        </article>
+
+        <!-- Proyecto 2: Botánica -->
+        <article class="portfolio-card fade-in fade-in--delay-2">
+          <div class="portfolio-card__placeholder">
+            <i data-lucide="image"></i>
+            <span>Imagen Botánica</span>
+          </div>
+            <img class="portfolio-card__img" src="img/BotanicaUXUITwo.jpg" alt="UX/UI & Branding Botánica" loading="lazy" />
+          <div class="portfolio-card__overlay"></div>
+          <div class="portfolio-card__info">
+            <p class="portfolio-card__category">UX/UI & Branding</p>
+            <h3 class="portfolio-card__name">Botánica</h3>
+          </div>
+          <div class="portfolio-card__arrow" aria-hidden="true">
+            <i data-lucide="arrow-up-right"></i>
+          </div>
+        </article>
+
+        <!-- Proyecto 3: Placeholder -->
+        <article class="portfolio-card portfolio-card--coming fade-in fade-in--delay-3">
+          <!--
+            📌 REEMPLAZAR IMAGEN — Proyecto 3
+            Cuando tengas el proyecto:
+            1. Elimina la clase "portfolio-card--coming"
+            2. Añade tu imagen:
+               <img class="portfolio-card__img" src="assets/proyecto-3.jpg" alt="Nombre del proyecto" />
+            3. Actualiza la categoría y el nombre
+          -->
+          <div class="portfolio-card__placeholder">
+            <i data-lucide="plus-circle"></i>
+            <span>Próximamente</span>
+          </div>
+          <div class="portfolio-card__overlay"></div>
+          <div class="portfolio-card__info">
+            <p class="portfolio-card__category">Tu categoría</p>
+            <h3 class="portfolio-card__name">Tu Proyecto</h3>
+          </div>
+        </article>
+
+        <!-- Proyecto 4: Placeholder -->
+        <article class="portfolio-card portfolio-card--coming fade-in fade-in--delay-4">
+          <!--
+            📌 REEMPLAZAR IMAGEN — Proyecto 4
+            Cuando tengas el proyecto:
+            1. Elimina la clase "portfolio-card--coming"
+            2. Añade tu imagen:
+               <img class="portfolio-card__img" src="assets/proyecto-4.jpg" alt="Nombre del proyecto" />
+            3. Actualiza la categoría y el nombre
+          -->
+          <div class="portfolio-card__placeholder">
+            <i data-lucide="plus-circle"></i>
+            <span>Próximamente</span>
+          </div>
+          <div class="portfolio-card__overlay"></div>
+          <div class="portfolio-card__info">
+            <p class="portfolio-card__category">Tu categoría</p>
+            <h3 class="portfolio-card__name">Tu Proyecto</h3>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       SECCIÓN: CTA FINAL
+       ============================================ -->
+  <section id="contacto">
+
+    <!-- Orbes de fondo -->
+    <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+    <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+    <div class="cta-decoration cta-decoration--1" aria-hidden="true"></div>
+    <div class="cta-decoration cta-decoration--2" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="cta-section fade-in">
+
+        <span class="section-tag">¿Listo para crecer?</span>
+
+        <h2 class="cta-section__title">
+          Construyamos juntos una marca<br />
+          que realmente <em class="highlight">convierta</em>
+        </h2>
+
+        <p class="cta-section__desc">
+          El diseño estratégico es la inversión más rentable para tu negocio a largo plazo.
+        </p>
+
+        <!--
+          📌 INSTRUCCIÓN CTA:
+          El botón puede apuntar a:
+          - Un formulario de contacto: href="#formulario"
+          - Un link externo (Calendly, WhatsApp): href="https://wa.me/573XXXXXXXXX"
+          - Un mailto: href="mailto:hola@aqualis.co"
+        -->
+        <a href="mailto:hola@aqualis.co" class="btn btn--primary btn--arrow cta-section__btn">
+          ¡Inicia hoy!
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+
+        <!-- Columna: Marca -->
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <div class="logo-placeholder">
+              <img src="img/Logo SVG White.svg" alt="Aqualis" style="height:38px" />
+            </div>
+          </div>
+          <p class="footer__desc">
+            Transformamos negocios a través del diseño estratégico. Creamos marcas memorables que conectan, convierten y perduran en el tiempo.
+          </p>
+          <div class="footer__social">
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/aqualis_agencia" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+              <img src="img/instagram.png" height="16px" alt="">
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://facebook.com/aqualis" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">
+              <img src="img/facebook.png" alt="">
+            </a>
+
+            <!-- WhatsApp -->
+            <!--
+              📌 REEMPLAZAR NÚMERO:
+              Cambia 573XXXXXXXXX por tu número con código de país (sin + ni espacios)
+            -->
+            <a href="https://wa.me/573XXXXXXXXX" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener">
+              <img src="img/whatsapp.png" alt="">
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Columna: Navegación -->
+        <div>
+          <h3 class="footer__col-title">Menú</h3>
+          <ul class="footer__nav" role="list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna: Contacto -->
+        <div>
+          <h3 class="footer__col-title">Contacto</h3>
+          <ul class="footer__contact-list" role="list">
+
+            <!-- Email — 📌 Reemplaza con tu email -->
+            <li class="footer__contact-item">
+              <i data-lucide="mail"></i>
+              <span>hola@aqualis.co</span>
+            </li>
+
+            <!-- Teléfono — 📌 Reemplaza con tu número -->
+            <li class="footer__contact-item">
+              <i data-lucide="phone"></i>
+              <span>+57 300 000 0000</span>
+            </li>
+
+            <!-- Ubicación -->
+            <li class="footer__contact-item">
+              <i data-lucide="map-pin"></i>
+              <span>Manizales, Colombia</span>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer bottom -->
+      <div class="footer__bottom">
+        <p class="footer__copy">
+          © 2025 <span>Aqualis</span>. Todos los derechos reservados.
+        </p>
+        <p class="footer__copy">
+          Hecho con ♥ en Manizales, Colombia
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ============================================
+       BOTÓN: SCROLL TO TOP
+       ============================================ -->
+  <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+    <i data-lucide="chevron-up"></i>
+  </button>
+
+
+  <!-- ============================================
+       BOTÓN: CHAT FLOTANTE (WhatsApp)
+       ============================================ -->
+  <!--
+    📌 REEMPLAZAR NÚMERO:
+    Cambia 573XXXXXXXXX por tu número con código de país
+  -->
+  <a href="https://wa.me/573XXXXXXXXX?text=Hola%2C%20me%20interesa%20una%20asesor%C3%ADa%20de%20marca"
+     class="chat-btn"
+     aria-label="Chat por WhatsApp"
+     target="_blank"
+     rel="noopener">
+    <i data-lucide="message-circle"></i>
+  </a>
+
+
+  <!-- ============================================
+       SCRIPTS
+       ============================================ -->
+  <script>
+    // Inicializar iconos Lucide
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.lucide) lucide.createIcons();
+    });
+
+    /* ---- Navbar scroll ---- */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    /* ---- Scroll to top ---- */
+    const scrollTopBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    /* ---- Animaciones fade-in con IntersectionObserver ---- */
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    fadeEls.forEach(el => observer.observe(el));
+
+    /* ---- Menú hamburguesa (mobile) ---- */
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.querySelector('.nav__links');
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.style.display === 'flex';
+      navLinks.style.display = isOpen ? '' : 'flex';
+      navLinks.style.flexDirection = 'column';
+      navLinks.style.position = 'absolute';
+      navLinks.style.top = '70px';
+      navLinks.style.left = '0';
+      navLinks.style.right = '0';
+      navLinks.style.background = 'rgba(25,40,68,0.97)';
+      navLinks.style.padding = '24px';
+      navLinks.style.gap = '20px';
+      navLinks.style.backdropFilter = 'blur(16px)';
+    });
+
+    /* Cerrar menú al hacer click en un link */
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.style.display = '';
+      });
+    });
+  </script>
+
+</body>
+</html>
